@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Overpass:wght@400;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+}
+.hidden {
+  display: none !important;
+}
+.active {
+  background-color: hsl(25, 97%, 53%) !important;
+  color: #fff !important;
+}
+.container {
+  width: 340px;
+  height: 320px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px;
+  border-radius: 20px;
+}
+.star {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(217, 12%, 63%, 0.178);
+  border-radius: 50%;
+}
+.rate {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.rate span {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #36414d;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.rate span:hover {
+  background-color: #7c8898;
+  color: #fff;
+}
+.select-rate p:first-of-type {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.select-rate p:last-of-type,
+.thinks-message:last-of-type {
+  color: hsl(216, 12%, 54%);
+  line-height: 1.4;
+  font-size: 17px;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  background: hsl(25, 97%, 53%);
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+button:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+}
+.thinks-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thinks-message p:first-of-type {
+  color: hsl(25, 97%, 53%);
+  background: hsla(217, 12%, 63%, 0.178);
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+.thinks-message h2 {
+  color: #fff;
+  font-size: 31px;
+  margin-bottom: 0;
+}
+.thinks-message p:last-of-type {
+  margin-top: 5px;
+}
